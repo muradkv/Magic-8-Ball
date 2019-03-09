@@ -23,6 +23,10 @@ class ViewController: UIViewController {
         generateImage()
     }
     
+    override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+        generateImage()
+    }
+    
     func generateImage() {
         
         let ballArray = ["ball1", "ball2", "ball3", "ball4", "ball5"]
