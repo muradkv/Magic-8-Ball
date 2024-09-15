@@ -66,7 +66,8 @@ class ViewController: UIViewController {
         askButton.addTarget(self, action: #selector(askButtonTapped), for: .touchUpInside)
     }
     
-    @objc private func askButtonTapped() {
+    @objc private func askButtonTapped(sender: UIButton) {
+        askButton.animateView(sender)
         ballImageView.image = BallImageModel.randomImage()
     }
 
